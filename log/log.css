@@ -1,0 +1,67 @@
+
+#selectors {
+  padding: 10px;
+}
+
+#selectors > li {
+  display: inline;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#selectors > li.selected {
+  border-bottom: 5px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th:nth-child(1) {
+  width: 20%;
+}
+
+th:nth-child(2) {
+  width: 15%;
+}
+
+th:nth-child(3) {
+  /* damn it why doesn't this work */
+  /* width: calc(65% - 12px); */
+  width: 60%;
+}
+
+thead > td(4) {
+  width: 12px;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  text-align: left;
+}
+
+tr {
+  border: 1px solid black;
+}
+
+tr.detailrow {
+  border-top: 0px;
+}
+
+tr.detailrow > td {
+  word-wrap: break-word;
+}
+
+tr.detailopen {
+  border-bottom: 0px;
+}
+

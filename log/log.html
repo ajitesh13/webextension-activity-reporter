@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html width="800" height="600">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chrome://global/skin/in-content/common.css"/>
+    <link rel="stylesheet" href="log.css"/>
+    <script type="application/javascript" src="log.js"></script>
+  </head>
+
+  <body>
+    <h1 id="title"></h1>
+
+    <ul id="selectors">
+      <li id="select-raw" class="selected">Raw Log</li>
+      <li id="select-tree">Tree</li>
+    </ul>
+
+    <div id="content-raw">
+      <button id="raw-clear">Clear</button>
+      <button id="downloadLog">Download Log</button>
+      <table width="100%">
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Type</th>
+            <th scope="col">Name</th>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody id="log"></tbody>
+      </table>
+    </div>
+
+    <div id="content-tree" class="hidden">
+      <ul id="api-tree"></ul>
+    </div>
+  </body>
+</html>
