@@ -235,7 +235,5 @@ async function init() {
     currentView.onLog(...args);
   }
 
-  browser.activityLog.onExtensionActivity.addListener(onLog, id);
-}
 
-addEventListener("DOMContentLoaded", init);
+}
