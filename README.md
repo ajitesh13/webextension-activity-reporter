@@ -31,4 +31,5 @@ Contratulation! You have successfully loaded the ActivityLog WebExtension in you
 5. You can similarly test this with other extensions installed in your browser.
 6. Whenever you want to Download the log for further analysis, click on `Download Log` button. And you can download the activity logged to that perticular point of time for further analysis of the logs
 7. For viewing the activity Log in tree format, click on `Tree` and reload the google page you have opened, in another tab
+   
 **Note:-** Reloading the google page is an event, that will trigger the activities for HTTPS extensions and you can view more activities in the log, but for testing the activities of any other Extensions you have to trigger an event accordingly that can generate more activities that will be uniques for that perticular extension
