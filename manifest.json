@@ -12,6 +12,7 @@
   },
 
   "permissions": [
+    "management",
     "activityLog",
     "tabs"
   ]
