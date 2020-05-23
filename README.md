@@ -2,7 +2,7 @@
 
 This project is tested on Mozilla/5.0 (X11; Linux x86_64; rv:76.0) Gecko/20100101 Firefox/76.0
 
-**Note :-** Make sure you have some loaded extensions in the Firefox Browser, before testing. If you haven't loaded any, I recommend in using the extensions [HTTPS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/) and [Dark Background and light text](https://addons.mozilla.org/en-US/firefox/addon/dark-background-light-text/) for getting quick result of logged actvity in this project.
+**Note:-** Make sure you have some loaded extensions in the Firefox Browser, before testing. If you haven't loaded any, I recommend in using the extensions [HTTPS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/) and [Dark Background and light text](https://addons.mozilla.org/en-US/firefox/addon/dark-background-light-text/) for getting quick result of logged actvity in this project.
 
 ## Setting up the Project
 
@@ -30,4 +30,5 @@ Contratulation! You have successfully loaded the ActivityLog WebExtension in you
 4. For more extensive testing, open a new tab and search anything(e.g. https://www.google.com/) you will see more activity in the HTTPS extension.
 5. You can similarly test this with other extensions installed in your browser.
 6. Whenever you want to Download the log for further analysis, click on `Download Log` button. And you can download the activity logged to that perticular point of time for further analysis of the logs
-7. For viewing the activity Log in tree format, click on `Tree` and reload the google page you have opened, in another tab (reloading the google page is an event, that will trigger the activities for HTTPS extensions and you can view more activities in the log, but for testing the activities of any other Extensions you have to trigger an event accordingly that can generate more activities that will be uniques for that perticular extension)
+7. For viewing the activity Log in tree format, click on `Tree` and reload the google page you have opened, in another tab
+**Note:-** Reloading the google page is an event, that will trigger the activities for HTTPS extensions and you can view more activities in the log, but for testing the activities of any other Extensions you have to trigger an event accordingly that can generate more activities that will be uniques for that perticular extension
