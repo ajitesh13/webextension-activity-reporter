@@ -30,6 +30,10 @@ li:hover {
 }
 
 #para {
-    color: white;
-    width: 30%;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: default;
+    background-color: rgb(218, 224, 236);
 }
