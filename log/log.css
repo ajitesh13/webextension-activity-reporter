@@ -1,20 +1,39 @@
+h1 {
+  text-align: center;
+  padding-top: 2%;
+}
 
 #selectors {
-  padding: 10px;
+  padding: 0.5% 2%;
+  margin: 10px;
 }
 
-#selectors > li {
+#selectors>li {
   display: inline;
   padding: 10px;
-  cursor: pointer;
 }
 
-#selectors > li.selected {
+#selectors>li.selected {
   border-bottom: 5px solid black;
 }
 
 .hidden {
   display: none;
+}
+
+#raw-clear {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#downloadLog {
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+#content-raw {
+  padding: 0 2%;
+  margin: 10px;
 }
 
 table {
@@ -23,30 +42,33 @@ table {
   border-collapse: collapse;
 }
 
+th {
+  text-align: left;
+  font-size: 1.2em;
+}
+
 th:nth-child(1) {
   width: 20%;
+  padding: 5px;
 }
 
 th:nth-child(2) {
-  width: 15%;
+  width: 25%;
 }
 
 th:nth-child(3) {
   /* damn it why doesn't this work */
   /* width: calc(65% - 12px); */
-  width: 60%;
+  width: 50%;
 }
 
-thead > td(4) {
+thead>td(4) {
   width: 12px;
-}
-
-th {
-  text-align: left;
 }
 
 td {
   text-align: left;
+  padding: 5px;
 }
 
 tr {
@@ -57,11 +79,10 @@ tr.detailrow {
   border-top: 0px;
 }
 
-tr.detailrow > td {
+tr.detailrow>td {
   word-wrap: break-word;
 }
 
 tr.detailopen {
   border-bottom: 0px;
 }
-
