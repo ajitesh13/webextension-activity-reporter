@@ -27,9 +27,47 @@ Contratulation! You have successfully loaded the ActivityLog WebExtension in you
 1. After loading the extension as a temporary extension into your browser. You will get a `inspect` button which will open a console for some developement related testing, which may not be useful for majority of users.
 2. To open the activity Log click the extension icon in the browser toolbar, which will give a message "view Extensions Activity" on hovering, a pop up will open listing the extensions installed in the browser and click one of them to view their activity (e.g. HTTPS Everywhere)
 3. You will be redirected to a new page where all the extension activity will be logged
-4. For more extensive testing, open a new tab and search anything(e.g. https://www.google.com/) you will see more activity in the HTTPS extension.
+4. For more extensive testing, open a new tab and search anything(e.g. <https://www.google.com/)> you will see more activity in the HTTPS extension.
 5. You can similarly test this with other extensions installed in your browser.
 6. Whenever you want to Download the log for further analysis, click on `Download Log` button. And you can download the activity logged to that perticular point of time for further analysis of the logs
 7. For viewing the activity Log in tree format, click on `Tree` and reload the google page you have opened, in another tab
-   
+
 **Note:-** Reloading the google page is an event, that will trigger the activities for HTTPS extensions and you can view more activities in the log, but for testing the activities of any other Extensions you have to trigger an event accordingly that can generate more activities that will be uniques for that perticular extension
+
+## Some Todos for further development of the project:
+
+* [x] Listing out all the extensions, currently activated in Firefox Browser
+* [x] Real time activity log of each extensions in tabular format
+* [x] Real time activity log of each extensions in tree view format
+* [x] Load the activity log to file in .txt format
+* [ ] Load the activity log to file in .json format
+* [ ] Listing out the extensions, which are activated in the current browser tab
+
+## Contributions
+
+* For existing bugs and adding more features open a issue [here](https://github.com/Ajitesh13/Extension-Activity-Monitor/issues).
+* Feel free to open a PR if you want to contribute in this awesome project, please try to maintain all the ES6 coding standards. As this will enabling us to keep the code updated according to the latest released Gecko Engine( currently it is tested with Gecko/20100101 Firefox/76.0)
+
+## Licence
+
+[MIT License](LICENSE)
+
+Copyright (c) 2020 Ajitesh Panda
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
