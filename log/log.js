@@ -92,15 +92,15 @@ const rawView = {
     let row =  document.createElement("tr");
 
     let time = document.createElement("td");
-    time.innerText = formatTime(details.timeStamp); //
+    time.innerText = formatTime(details.timeStamp);
     row.appendChild(time);
 
     let type = document.createElement("td");
-    type.innerText = details.type; //
+    type.innerText = details.type;
     row.appendChild(type);
 
     let name = document.createElement("td");
-    name.innerText = details.name; //
+    name.innerText = details.name;
     row.appendChild(name);
 
     let marker = document.createElement("td");
@@ -168,8 +168,7 @@ const treeView = {
 
       item.appendChild(label);
       item.appendChild(listEl);
-      
-      // XXX sort
+
       tree.listEl.appendChild(item);
 
       child = {label, listEl};
@@ -221,7 +220,7 @@ const treeView = {
 async function init() {
   const id = window.location.hash.slice(1);
   // const addon = await AddonManager.getAddonByID(id);
-  // const title = `Activity Log for ${addon.name}`;  
+  // const title = `Activity Log for ${addon.name}`;
   const title = `Activity Log for ${id}`;
 
   let header = document.getElementById("title");
@@ -235,7 +234,7 @@ async function init() {
     currentView.onLog(...args);
   }
 
-  browser.activityLog.onExtensionActivity.addListener(onLog, id);
+  await browser.activityLog.onExtensionActivity.addListener(onLog, id);
 }
 
 addEventListener("DOMContentLoaded", init);
