@@ -6,7 +6,6 @@ window.addEventListener("load", async () => {
   let list = document.getElementById("list");
   let addons = await browser.management.getAll();
   for (let addon of addons) {
-    // if (addon.type !== "extension") { continue; }
     if (addon.type !== "extension" || !addon.enabled) { continue; }
     console.log(addon);
 
@@ -32,7 +31,7 @@ window.addEventListener("load", async () => {
     let tabid = currentTab.id;
     // console.log(currentTab.id);
     let para = document.getElementById("para");
-    para.innerHTML = tabid;
+    para.innerText = `Current TabId: ${tabid}`;
   });
 });
 
