@@ -1,8 +1,13 @@
+# Extension Activity Monitor
+
 This project is tested on Mozilla/5.0 (X11; Linux x86_64; rv:76.0) Gecko/20100101 Firefox/76.0
 
-Note :- Make sure you have some loaded extensions in the Firefox Browser, before testing. If you haven't loaded any, I recommend in using the extensions [HTTPS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/) and [Dark Background and light text](https://addons.mozilla.org/en-US/firefox/addon/dark-background-light-text/) for quick result of logged actvity.
+**Note :-** Make sure you have some loaded extensions in the Firefox Browser, before testing. If you haven't loaded any, I recommend in using the extensions [HTTPS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/) and [Dark Background and light text](https://addons.mozilla.org/en-US/firefox/addon/dark-background-light-text/) for getting quick result of logged actvity in this project.
+
+## Setting up the Project
 
 ### Loading the Extension into Firefox
+
 1. Open your Firefox Browser (make sure Firefox is >= 70).
 2. In the search bar type `about:config` and press enter. A screen with titled **Proceed with Caution** will appear, click on **Accept the Risk and Continue**
 3. You will be taken to a page warning you **Changing these preferences can impact Firefox performance or security**, in the page you will find a search bar at the top and in the search bar, type `extensions.experiments.enabled` which would be initially set to `false`
@@ -18,6 +23,7 @@ Now your Firefox is ready to experiment with unreleased WebExtensions APIs.
 Contratulation! You have successfully loaded the ActivityLog WebExtension in your firefox browser. So get ready for testing
 
 ### Testing the Extension
+
 1. After loading the extension as a temporary extension into your browser. You will get a `inspect` button which will open a console for some developement related testing, which may not be useful for majority of users.
 2. To open the activity Log click the extension icon in the browser toolbar, which will give a message "view Extensions Activity" on hovering, a pop up will open listing the extensions installed in the browser and click one of them to view their activity (e.g. HTTPS Everywhere)
 3. You will be redirected to a new page where all the extension activity will be logged
