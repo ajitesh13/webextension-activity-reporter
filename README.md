@@ -34,6 +34,10 @@ Contratulation! You have successfully loaded the ActivityLog WebExtension in you
 
 **Note:-** Reloading the google page is an event, that will trigger the activities for HTTPS extensions and you can view more activities in the log, but for testing the activities of any other Extensions you have to trigger an event accordingly that can generate more activities that will be uniques for that perticular extension
 
+### Understanding the Activity Log
+
+To understand the activity Log in a more detailed way or for using it in a more effective manner, click [here](UNDERSTANDINGTHEAPI.md)
+
 ## Some Todos for further development of the project:
 
 * [x] Listing out all the extensions, currently activated in Firefox Browser
