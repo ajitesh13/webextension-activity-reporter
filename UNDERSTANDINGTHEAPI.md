@@ -1,3 +1,5 @@
+# Understanding the Activity Log API
+
 This entire project is about leveraging the ActivtyLog API. To create an end product for user, that let them track the activities of other WebExtensions, in the Firefox browser, such as altered browser settings or network requests and the
 messages exchanged between the different parts of the Extension.
 
@@ -31,10 +33,9 @@ The Activity Log API provide an event `onExtensionActivity(details, id)` which w
 
 ![parameter diagram](presentations/parmeter%20diagram%20of%20activity%20log%20event%20.jpeg)
 
+As the call back function, I have passed a logging function `_log()`, so that the `onExtensionActivity()` event will listen for the activities of other extensions and execute the logging function, whenever it detects an extension activity.
 
-
-
-
-
-
-
+To know more about the API click the below link:
+* [API Implementation file](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/parent/ext-activityLog.js)
+* [API Test file](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/test/mochitest/test_ext_activityLog.html)
+* [API JSON schema](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/schemas/activity_log.json)
