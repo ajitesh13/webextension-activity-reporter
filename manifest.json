@@ -10,6 +10,8 @@
     "default_popup": "popup/popup.html"
   },
   "permissions": [
+    "activityLog",
+    "management",
     "tabs"
   ]
 }

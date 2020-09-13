@@ -1,2 +1,2 @@
 
-console.log("hello world");
+console.log("[MESSAGE FROM BACKGROUND SCRIPT] WebExtension is Successfully Installed!");
