@@ -1,34 +1,30 @@
 'use strict';
 
-console.log('in popup');
 window.addEventListener('load', async () => {
-	console.log('in load');
 	let list = document.getElementById('list');
 	let addons = await browser.management.getAll();
+	console.log('List of Addons: ');
 	for (let addon of addons) {
 		if (addon.type !== 'extension' || !addon.enabled) {
 			continue;
 		}
 		console.log(addon);
 
-		(({ name, id }) => {
-			if (name != 'extension logging') {
-				let item = document.createElement('li');
-				item.innerText = name;
-				item.addEventListener('click', () => {
-					browser.tabs.create({
-						url: `${browser.runtime.getURL('log/log.html')}#${id}`
-					});
-					window.close();
+		if (addon.name !== 'extension logging') {
+			let item = document.createElement('li');
+			item.innerHTML = addon.name;
+			item.addEventListener('click', () => {
+				browser.tabs.create({
+					url: `${browser.runtime.getURL('log/log.html')}#${addon.id}`
 				});
-				list.appendChild(item);
-			}
-		})(addon);
+				window.close();
+			});
+			list.appendChild(item);
+		}
 	}
 
 	var gettingActiveTab = browser.tabs.query({ active: true, currentWindow: true });
 	gettingActiveTab.then((tabs) => {
-		console.log('insidequery');
 		let currentTab = tabs[0];
 		let tabid = currentTab.id;
 		// console.log(currentTab.id);
