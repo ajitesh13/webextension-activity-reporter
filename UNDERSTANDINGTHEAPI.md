@@ -38,4 +38,4 @@ To know more about the API click the below link:
 * [API Implementation file](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/parent/ext-activityLog.js)
 * [API Test file](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/test/mochitest/test_ext_activityLog.html)
 * [API JSON schema](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/schemas/activity_log.json)
-* [JSM Module] (https://searchfox.org/mozilla-central/source/toolkit/components/extensions/ExtensionActivityLog.jsm)
+* [JSM Module](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/ExtensionActivityLog.jsm)
