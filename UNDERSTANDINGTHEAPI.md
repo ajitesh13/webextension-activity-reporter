@@ -1,9 +1,8 @@
 # Understanding the Activity Log API
 
-This entire project is about leveraging the ActivtyLog API. To create an end product for user, that let them track the activities of other WebExtensions, in the Firefox browser, such as altered browser settings or network requests and the
-messages exchanged between the different parts of the Extension.
+This entire project is about leveraging the ActivtyLog API. To create an end product for user, that let them track the activities of other WebExtensions, in the Firefox browser, such as altered browser settings or network requests and the messages exchanged between the different parts of the Extension.
 
-For implementing all these functionalities, we have to make use of some of theexisting Firefox features, WebExtension APIs, web APIs and a lot of JavaScript DOM to make our desired end product handy and useful to the users.
+For implementing all these functionalities, we have to make use of some of the existing Firefox features, WebExtension APIs, web APIs and a lot of JavaScript DOM to make our desired end product handy and useful to the users.
 
 #### Some of the Web Extensions APIs used in the project are:
 
