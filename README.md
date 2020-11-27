@@ -1,4 +1,4 @@
-# WebExtension Activity Reporter 
+![webextension-activity-reporter](https://socialify.git.ci/Ajitesh13/webextension-activity-reporter/image?description=1&font=Raleway&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
 
 This project is tested on Mozilla/5.0 (X11; Linux x86_64; rv:76.0) Gecko/20100101 Firefox/76.0
 
