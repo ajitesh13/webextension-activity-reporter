@@ -17,7 +17,7 @@ Unlike the `about:addons` which is the primary way how all Firefox users manage 
 ### Loading the Extension into Firefox
 
 1. Open your Firefox Browser (make sure Firefox is >= 70).
-2. In the search bar type `about:config` and press enter. A screen with  titled **Proceed with Caution** will appear, click on **Accept the Risk and Continue**
+2. In the search bar type `about:config` and press enter. A screen with titled **Proceed with Caution** will appear, click on **Accept the Risk and Continue**
 3. You will be taken to a page warning you **Changing these preferences can impact Firefox performance or security**, in the page you will find a search bar at the top and in the search bar, type `extensions.experiments.enabled` which would be initially set to `false`
 4. Click on the switch button at the far right-end of the row and change the preference to `true`.
 
@@ -46,19 +46,21 @@ Contratulation! You have successfully loaded the ActivityLog WebExtension in you
 
 To understand the activity Log in a more detailed way or for using it in a more effective manner, click [here](UNDERSTANDINGTHEAPI.md)
 
+### \*\* Currently this particular webextension API has been pulled back by Moz
+
 ## Some Todos for further development of the project:
 
-* [x] Listing out all the extensions, currently activated in Firefox Browser
-* [x] Real time activity log of each extensions in tabular format
-* [x] Real time activity log of each extensions in tree view format
-* [x] Load the activity log to file in .txt format
-* [ ] Load the activity log to file in .json format
-* [ ] Listing out the extensions, which are activated in the current browser tab
+- [x] Listing out all the extensions, currently activated in Firefox Browser
+- [x] Real time activity log of each extensions in tabular format
+- [x] Real time activity log of each extensions in tree view format
+- [x] Load the activity log to file in .txt format
+- [ ] Load the activity log to file in .json format
+- [ ] Listing out the extensions, which are activated in the current browser tab
 
 ## Contributions
 
-* For existing bugs and adding more features open a issue [here](https://github.com/Ajitesh13/Extension-Activity-Monitor/issues).
-* Feel free to open a PR if you want to contribute in this awesome project, please try to maintain all the ES6 coding standards. As this will enabling us to keep the code updated according to the latest released Gecko Engine( currently it is tested with Gecko/20100101 Firefox/76.0)
+- For existing bugs and adding more features open a issue [here](https://github.com/Ajitesh13/Extension-Activity-Monitor/issues).
+- Feel free to open a PR if you want to contribute in this awesome project, please try to maintain all the ES6 coding standards. As this will enabling us to keep the code updated according to the latest released Gecko Engine( currently it is tested with Gecko/20100101 Firefox/76.0)
 
 ## Licence
 
