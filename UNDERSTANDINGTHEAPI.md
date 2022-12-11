@@ -6,17 +6,17 @@ For implementing all these functionalities, we have to make use of some of the e
 
 #### Some of the Web Extensions APIs used in the project are:
 
-* management
-* browserAction
-* runtime
-* tabs
-* windows (this API is not yet implemented, but can be used to displpay the Activity Log in a different browser windows)
+- management
+- browserAction
+- runtime
+- tabs
+- windows (this API is not yet implemented, but can be used to displpay the Activity Log in a different browser windows)
 
 #### Some of the Web APIs used in the project are:
 
-* window
-* Blob
-* URL
+- window
+- Blob
+- URL
 
 #### How the Activity Log is developed ?
 
@@ -35,7 +35,8 @@ The Activity Log API provide an event `onExtensionActivity(details, id)` which w
 As the call back function, I have passed a logging function `_log()`, so that the `onExtensionActivity()` event will listen for the activities of other extensions and execute the logging function, whenever it detects an extension activity.
 
 To know more about the API click the below link:
-* [API Implementation file](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/parent/ext-activityLog.js)
-* [API Test file](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/test/mochitest/test_ext_activityLog.html)
-* [API JSON schema](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/schemas/activity_log.json)
-* [JSM Module](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/ExtensionActivityLog.jsm)
+
+- [API Implementation file](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/parent/ext-activityLog.js)
+- [API Test file](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/test/mochitest/test_ext_activityLog.html)
+- [API JSON schema](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/schemas/activity_log.json)
+- [JSM Module](https://searchfox.org/mozilla-central/source/toolkit/components/extensions/ExtensionActivityLog.jsm)
